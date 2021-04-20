@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ReviewBlogDemo.Model;
+using DevBlog.Lib.Model;
 
-namespace ReviewBlogDemo.Data
+namespace DevBlog.Lib.Data
 {
     public class EntryRepository : IEntryRepository
     {
@@ -28,12 +28,19 @@ namespace ReviewBlogDemo.Data
 
         public void UpdateEntry(Entry entry)
         {
-            throw new NotImplementedException();
+            // entries.FirstOrDefault<Entry>() = entry;
+            
+            // entries.Find(e => e.Name == entry.Name) = entry;
+
+            // Entry modEntry = entries.Find(e => e.Name == entry.Name);
+            // modEntry = entry;
         }
 
         public void DeleteEntry(Entry entry)
         {
-            entries.Remove(entry);
+            // entries.Remove(entry);
+
+            entry.Active = false;
         }
     }
 }

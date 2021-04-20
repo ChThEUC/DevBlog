@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DevBlog.Lib.Model;
 
-namespace DevBlog.Lib.Model
+namespace DevBlog.Lib.Data
 {
-    class TagCloud
+    class BlogPostRepository : IEntryRepository
     {
-        public string Street { get; set; }
-        public List<Tag> Tags { get; set; }
     }
 }

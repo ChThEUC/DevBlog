@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReviewBlogDemo.Model
+namespace DevBlog.Lib.Model
 {
     public class Entry
     {
@@ -12,5 +12,10 @@ namespace ReviewBlogDemo.Model
         public DateTime Date { get; set; }
         public bool Active { get; set; }
         public string Headline { get; set; }
+
+        public Entry()
+        {
+            Active = true;
+        }
     }
 }

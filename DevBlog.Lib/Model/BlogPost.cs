@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReviewBlogDemo.Model
+namespace DevBlog.Lib.Model
 {
     class BlogPost : Entry
     {
@@ -12,5 +12,9 @@ namespace ReviewBlogDemo.Model
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public List<Image> Images { get; set; }
+
+        public BlogPost() : base()
+        {
+        }
     }
 }

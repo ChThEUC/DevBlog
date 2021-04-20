@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ReviewBlogDemo.Model;
+using DevBlog.Lib.Model;
 
-namespace ReviewBlogDemo.Data
+namespace DevBlog.Lib.Data
 {
     public interface IEntryRepository
     {

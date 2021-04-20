@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReviewBlogDemo.Model
+namespace DevBlog.Lib.Model
 {
     class Contact
     {

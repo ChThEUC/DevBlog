@@ -36,6 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\BlogPostRepository.cs" />
     <Compile Include="Data\EntryRepository.cs" />
     <Compile Include="Data\IEntryRepository.cs" />
     <Compile Include="Model\BlogPost.cs" />

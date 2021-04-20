@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReviewBlogDemo.Model
+namespace DevBlog.Lib.Model
 {
     class Review : Entry
     {
@@ -12,5 +12,9 @@ namespace ReviewBlogDemo.Model
         public List<Image> Images { get; set; }
         public int NumberOfStars { get; set; }
         public string Link { get; set; }
+
+        public Review() : base()
+        {
+        }
     }
 }
