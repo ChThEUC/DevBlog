@@ -7,9 +7,9 @@ using DevBlog.Lib.Model;
 
 namespace DevBlog.Lib.Data
 {
-    public class EntryRepository : IEntryRepository
+    public class EntryRepository : IMaintainable<Entry>
     {
-        List<Entry> entries;
+        protected static List<Entry> entries;
 
         public List<Entry> GetAllEntries()
         {
@@ -36,7 +36,7 @@ namespace DevBlog.Lib.Data
             // modEntry = entry;
         }
 
-        public void DeleteEntry(Entry entry)
+        public void DeleteEntry(ref Entry entry)
         {
             // entries.Remove(entry);
 

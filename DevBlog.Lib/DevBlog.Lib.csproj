@@ -38,7 +38,9 @@
   <ItemGroup>
     <Compile Include="Data\BlogPostRepository.cs" />
     <Compile Include="Data\EntryRepository.cs" />
-    <Compile Include="Data\IEntryRepository.cs" />
+    <Compile Include="Data\IMaintainable.cs" />
+    <Compile Include="Data\ReferenceRepository.cs" />
+    <Compile Include="Data\ReviewRepository.cs" />
     <Compile Include="Model\BlogPost.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\Entry.cs" />

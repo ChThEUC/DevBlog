@@ -7,31 +7,33 @@ using DevBlog.Lib.Model;
 
 namespace DevBlog.Lib.Data
 {
-    class BlogPostRepository : EntryRepository, IMaintainable<BlogPost>
+    class ReferenceRepository : EntryRepository, IMaintainable<Reference>
     {
-        // Identical to method in base class; inheritable? Add BlogPost-specifics to method?
-        public void CreateEntry(BlogPost entry)
+        public void CreateEntry(Reference entry)
         {
+            // Should references be added to the relevant Language class like this?
+            // Language lang = entry.Language;
+            // lang.References.Add(entry);
+
             entries.Add(entry);
         }
 
-        // Identical to method in base class; inheritable?
-        public void DeleteEntry(ref BlogPost entry)
+        public void DeleteEntry(ref Reference entry)
         {
             entry.Active = false;
         }
 
-        public List<BlogPost> GetAllEntries()
+        public List<Reference> GetAllEntries()
         {
             throw new NotImplementedException();
         }
 
-        public BlogPost GetEntryByName(string name)
+        public Reference GetEntryByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateEntry(BlogPost entry)
+        public void UpdateEntry(Reference entry)
         {
             throw new NotImplementedException();
         }
